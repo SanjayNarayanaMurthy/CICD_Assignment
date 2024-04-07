@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import GaussianNB
 import pickle
-import numpy as np
+import numpy as nparr
 
 df = pd.read_csv("data/train.csv")
 X = df.drop(columns=['Disease']).to_numpy()
