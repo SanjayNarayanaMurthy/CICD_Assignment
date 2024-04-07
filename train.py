@@ -10,7 +10,6 @@ y = df['Disease'].to_numpy()
 labels = np.sort(np.unique(y))
 y = np.array([np.where(labels == x) for x in y]).flatten()
 
-#model = LogisticRegression().fit(X, y)
 model = GaussianNB().fit(X, y)
 
 with open("model.pkl", 'wb') as f:
